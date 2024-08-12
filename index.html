@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="">
+            <h1>Welcome to the Kode Camp 4.0 Frontend Beginner Quiz</h1>
+        </header>
+
+        <main>
+            <section class="Question--1">
+                <button class="Question--Butt" id="Question--Butt1" onclick="questionButt1 ()">Question 1</button>
+                <button class="Question--Butt" id="Question--Butt2" onclick="questionButt2 ()">Question 2</button>
+                <button class="Question--Butt" id="Question--Butt3" onclick="questionButt3 ()">Question 3</button>
+                <button class="Question--Butt" id="Question--Butt4" onclick="questionButt4 ()">Question 4</button>
+                <button class="Question--Butt" id="Question--Butt5" onclick="questionButt5 ()">Question 5</button>
+                <button class="Question--Butt" id="Question--Butt6" onclick="questionButt6 ()">Question 6</button>
+                <button class="Question--Butt" id="Question--Butt7" onclick="questionButt7 ()">Question 7</button>
+                <button class="Question--Butt" id="Question--Butt8" onclick="questionButt8 ()">Question 8</button>
+                <button class="Question--Butt" id="Question--Butt9" onclick="questionButt9 ()">Question 9</button>
+                <button class="Question--Butt" id="Question--Butt10" onclick="questionButt10 ()">Question 10</button>
+            </section>
+
+            <section class="Question--2">
+                <div class="Question--popUp hidden">
+                    <h3>Question 1</h3>
+                    <p class="Question"></p>
+                    <div class="Question--options">
+                        <input type="radio" name="General" id="option--A" value="1" onclick="mySelected()">
+                        <label for="option--A" class="optA" id="lab"></label> <br>
+
+                        <input type="radio" name="General" id="option--B" value="2">
+                        <label for="option--B" class="optB" id="lab"></label> <br>
+
+                        <input type="radio" name="General" id="option--C" value="3">
+                        <label for="option--C" class="optC" id="lab"></label> <br>
+
+                        <input type="radio" name="General" id="option--D" value="4">
+                        <label for="option--D" class="optD" id="lab"></label>
+                    </div>
+                    <div>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt1">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt2">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt3">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt4">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt5">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt6">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt7">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt8">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt9">Submit</button>
+                        <button type="submit" class="Submit--ans hidden" id="submitButt10">Submit</button>
+                    </div>
+
+                </div>
+                <div class="Question--Score">
+                    <p class="score">Score</p>
+                    <p class="User--score" id="correct--score">0</p>
+                </div>
+            </section>
+        </main>
+        
+        <section class="finish">
+            <button class="finish--Butt" onclick="congratulations ()">Finish</button>
+        </section>
+
+        <footer>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

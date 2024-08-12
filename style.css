@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #9710D7, #CF87F9);
+    display: grid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+.container {
+    margin: 2% 4%;
+    border: solid;
+    border-radius: 4rem;
+    padding: 2%;
+    box-shadow: 3px 3px #9710D7;
+}
+
+
+/* Styling for the Questions Button Section */
+.Question--Butt {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 3px;
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 2px #000000c2;
+    border-radius: 20px;
+}
+
+.Question--Butt:hover {
+    background-color: #9710D7;
+    transition: .5s ease-out;
+    transform: scaleY(1.2);
+    border: transparent;
+}
+
+.Active--Question {
+    background-color: #9710D7;
+    border: transparent;
+}
+.correct--answer {
+    background-color: #10d75c;
+}
+.wrong--answer {
+    background-color: #e21a1a;
+}
+
+
+.Question--2{
+    border: solid 1px #000;
+    padding: 2%;
+    border-radius: 2rem;
+}
+
+
+/* Styling for the Question and Score section */
+.Question--popUp {
+    height: 55%;
+    padding: 2%;
+}
+
+
+/* Styling for the Question and answer section */
+.Question {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+label {
+    font-size: 16px;
+}
+
+
+input {
+    margin-bottom: 10px;
+}
+.Submit--ans {
+    margin-top: 2%;
+    float: right;
+    padding: 1% 2%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9710D7;
+    border-radius: 1rem;
+    border: transparent;
+}
+
+.Submit--ans:hover {
+    background-color: #9710D7;
+    transition: .5s ease-out;
+    transform: scaleX(1.1);
+    color: #fff;
+}
+
+/* Styling for the scoring section */
+.Question--score {
+    display: grid;
+}
+.score {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.User--score {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.finish {
+    margin: 2% 20%;
+    margin-bottom: 0;
+}
+.finish--Butt {
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4e4c4c;
+    border: solid 2px #000000c2;
+    border-radius: 20px;
+}
+.finish--Butt:hover {
+    color:  #bbb1b1;
+}
+.hidden {
+    display: none;
+}
